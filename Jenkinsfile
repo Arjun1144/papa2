@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("Maven Build"){
             steps{
-                sh "mvn clean package"
+                echo "mvn clean package"
             }
         }
         stage("Deploy to Dev"){
